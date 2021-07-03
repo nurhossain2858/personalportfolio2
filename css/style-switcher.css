@@ -5,11 +5,17 @@
     padding: 15px;
     width: 200px;
     border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
 }
 .style-switcher.open{
-    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+            transform: translateX(-15px);
 }
 .style-switcher .s-icon{
     position: absolute;
@@ -21,6 +27,8 @@
     right: 100%;
     margin-right: 15px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 50%;
 }
@@ -44,9 +52,14 @@
     text-transform: capitalize;
 }
 .style-switcher .colors{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .style-switcher .colors span{
     display: inline-block;
